@@ -1,0 +1,120 @@
+% --- LaTeX CV Template - S. Venkatraman ---
+
+% Set document class and font size
+\documentclass[letterpaper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+
+%%%Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+% Package imports
+\usepackage{setspace, longtable, graphicx, hyphenat, hyperref, fancyhdr, ifthen, everypage, enumitem, amsmath, setspace}
+
+% --- Page layout settings ---
+
+% Set page margins
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+% Set line spacing
+\renewcommand{\baselinestretch}{1.15}
+
+% --- Page formatting ---
+
+% Set link colors
+\usepackage[dvipsnames]{xcolor}
+\hypersetup{colorlinks=true, linkcolor=RoyalBlue, urlcolor=RoyalBlue}
+
+% Set font to Libertine, including math support
+\usepackage{libertine}
+\usepackage[libertine]{newtxmath}
+
+% Remove page numbering
+\pagenumbering{gobble}
+
+% --- Document starts here ---
+
+\begin{document}
+
+% Name and date of last update to this document
+\noindent{\Huge{Умар Чемурзиев}
+\hfill{\it\footnotesize Updated \today}}
+
+% --- Contact information and other items ---
+
+\vspace{0.5cm} 
+\begin{center}
+\begin{tabular}{ll}
+% Line 1: Email, GitHub, office location
+\textbf{Электронная почта}: mail2umni@gmail.com. &
+\hspace{0.55in} \textbf{GitHub}: \href{https://github.com/umchemurziev}{github.com/umchemurziev} \\
+
+% Line 2: Phone number, LinkedIn, citizenship
+\textbf{Телефон}: +7 (925) 228 11-69   &  
+\hspace{0.55in} \textbf{Гражданство}: Россия \\
+\end{tabular}
+\end{center}
+
+% --- Start the two-column table storing the main content ---
+
+% Set spacing between columns
+\setlength{\tabcolsep}{8pt}
+
+% Set the width of each column
+\begin{longtable}{p{1.3in}p{4.8in}}
+
+% --- Section: Research interests ---
+
+\nohyphens{\color{OliveGreen}{Исследовательские интересы}}
+& \\
+& Алгоритмы и структуры данных; \\
+& Определение средней линии позвоночника по рентгеновскому снимку методами глубокого обучения; \\
+& Разработка приложения для полуавтоматической разметки данных \\
+& \\
+
+% --- Section: Education ---
+
+\color{OliveGreen}{Образование} 
+& \\
+& \textbf{ВШЭ} \hfill Москва, Россия \\ 
+& Прикладная математика и информатика \hfill 09 2019 -- 09 2023 \\
+& Факультет компьютерных наук, Бакалавриат \\
+& \\
+
+
+% --- Uncomment the next few lines if you want to include some courses ---
+%& \textbf{Selected coursework}
+%\begin{itemize}[noitemsep,leftmargin=*]
+%\item \underline{Relevant subject 1}: Course 1, Course 2, Course 3, Course 4
+%\item \underline{Relevant subject 2}: Course 1, Course 2, Course 3, Course 4
+%\end{itemize} \\
+
+
+% --- Section: Various skills (programming, software, languages, etc.) ---
+
+{\color{OliveGreen}{Навыки}} 
+& \\
+& \textbf{Программирование}\\
+& Опытный в: C++, Python. \\
+& Знаком с: С, JS, HTML, CSS. \\
+& \\
+
+& \textbf{Языки} \\
+& Русский (носитель), Английский (B2) \\
+& \\
+
+
+% --- Section: Other interests/hobbies ---
+
+\nohyphens{\color{OliveGreen}{Интересы}}
+& \\
+& Финансовые рынки и инвестиции \\
+& Бег и плавание \\
+& Лыжный спорт \\
+
+% --- End of CV! ---
+
+\end{longtable}
+\end{document}
