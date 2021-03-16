@@ -1,6 +1,6 @@
 import hashlib
 
-name = 'Чемурзиев Умар Магомедович'
+name = 'Умар Чемурзиев Магомедович'
 
 systems = [
     'debian:10.1',
