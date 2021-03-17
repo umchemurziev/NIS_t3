@@ -1,2 +1,2 @@
 #!/bin/bash
-pdflatex /CV/CV.tex -interacftion=nonstopmode
+pdflatex /CV/CV.tex -interaction=nonstopmode

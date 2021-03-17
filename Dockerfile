@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 
 
-RUN apt-get update
+RUN apt-get update && apt-get --yes --no-install-recommends install evince
 
 RUN apt-get install --yes --no-install-recommends texlive-fonts-recommended
 RUN apt-get install --yes --no-install-recommends texlive-generic-recommended
